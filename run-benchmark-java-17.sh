@@ -1,5 +1,5 @@
 #!/bin/bash
 
-git checkout java-8
+git checkout java-17
 
 ./gradlew jmh
