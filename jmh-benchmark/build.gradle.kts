@@ -1,13 +1,9 @@
 plugins {
-    id("me.champeau.gradle.jmh") version "0.5.2"
+  id("me.champeau.jmh") version "0.6.6"
 }
 
 dependencies {
     implementation(project(":fibonacci"))
-}
-
-jmh {
-    duplicateClassesStrategy = DuplicatesStrategy.INCLUDE
 }
 
 
