@@ -6,4 +6,7 @@ dependencies {
     implementation(project(":fibonacci"))
 }
 
+tasks.withType<Jar> {
+    duplicatesStrategy = DuplicatesStrategy.INCLUDE
+}
 
