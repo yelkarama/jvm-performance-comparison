@@ -13,7 +13,7 @@ subprojects {
     apply(plugin = "kotlin")
 
     tasks.withType<KotlinCompile>() {
-        kotlinOptions.jvmTarget = "17"
+        kotlinOptions.jvmTarget = "18"
     }
 }
 
