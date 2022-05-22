@@ -2,4 +2,4 @@
 
 git checkout java-17
 
-./gradlew jmh
+./gradlew clean jmh
