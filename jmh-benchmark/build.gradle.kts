@@ -6,7 +6,13 @@ dependencies {
     implementation(project(":fibonacci"))
 }
 
-tasks.withType<Jar> {
-    duplicatesStrategy = DuplicatesStrategy.INCLUDE
+jmh {
+  fork.set(1)
+  iterations.set(100)
+  timeOnIteration.set("1s")
+  warmupIterations.set(0)
+  benchmarkMode.set( listOf("thrpt") )
+  threads.set(4)
+  includeTests.set(false)
+  duplicateClassesStrategy.set(DuplicatesStrategy.INCLUDE)
 }
-
