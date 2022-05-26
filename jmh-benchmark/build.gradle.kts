@@ -8,7 +8,7 @@ dependencies {
 
 jmh {
   fork.set(1)
-  iterations.set(100)
+  iterations.set(1000)
   timeOnIteration.set("1s")
   warmupIterations.set(0)
   benchmarkMode.set( listOf("thrpt") )
