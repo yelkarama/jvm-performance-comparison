@@ -8,7 +8,7 @@ dependencies {
 
 jmh {
   fork.set(1)
-  iterations.set(1000)
+  iterations.set(100)
   timeOnIteration.set("1s")
   warmupIterations.set(0)
   benchmarkMode.set( listOf("thrpt") )
@@ -16,3 +16,4 @@ jmh {
   includeTests.set(false)
   duplicateClassesStrategy.set(DuplicatesStrategy.INCLUDE)
 }
+
